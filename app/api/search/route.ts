@@ -19,7 +19,7 @@ export async function GET(request: NextRequest) {
 
     const res = await mxbai.stores.search({
       query,
-      store_identifiers: ["nga-public-images"], // Update with your store identifier
+      store_identifiers: ["nga-public-images-v3"], // Update with your store identifier
       top_k: 16,
       search_options: {
         score_threshold: 0.55,
